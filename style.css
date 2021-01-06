@@ -1,51 +1,63 @@
+/* Raw HTML Tags */
+
 html {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #1A1A1A;
-    color: #EFEFEF;
+    background-color: #1f2830;
+    color: #efefef;
+    scroll-behavior: smooth;
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1920px) {
     html {
         font-size: 24px;
     }
 }
 
-@media (min-width: 1921px) {
-    html {
-        font-size: 32px;
-    }
-}
-
-a, a:active {
-    font-weight: 700;
-    color: #EFEFEF;
+a,
+a:active {
+    color: #efefef;
     text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration: underline;
 }
 
-h1, h2, h3 {
-    font-family: 'Roboto Slab', serif;
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", serif;
 }
 
-h4, h5, h6 {
-    font-family: 'Roboto Condensed', sans-serif;
+h4,
+h5,
+h6 {
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     font-weight: 700;
-    padding: 0.8em 0 0.25em;
+    padding: 0.6em 0 0.25em;
 }
 
 p {
     margin: 0;
     padding: 0.5em 0;
+}
+
+b,
+strong {
+    font-weight: 700;
 }
 
 body {
@@ -62,16 +74,21 @@ body {
 section {
     position: relative;
     display: block;
-    margin: 0 -25px;
-    padding: 25px 0;
+    margin: 0 -1.5rem;
+    height: fit-content;
 }
 
 footer {
+    background-color: #1a1a1a;
     position: relative;
     display: block;
-    margin: 0 -25px;
+    margin: 2.5rem -1.5rem 0;
     height: 128px;
     font-size: 1rem;
+}
+
+footer a {
+    font-weight: 700;
 }
 
 ul {
@@ -80,69 +97,14 @@ ul {
     list-style: none;
 }
 
-#wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0 25px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-#nav-header {
-    background-color: #1A1A1A;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 96px;
-    line-height: 96px;
-    z-index: 999;
-    display: none;
-    border-bottom: 2px solid #101010;
-    /* trick for fixing spaces between inline-blocks */
-    font-size: 0;
-}
-
-@media (min-width: 960px) {
-    #nav-header {
-        display: block;
-    }
-}
-
-#nav-header a {
-    font-size: 1.5rem;
-    padding: 0 25px;
-    display: block;
-    height: 100%;
-}
-
-#ugd-logo {
-    padding: 7rem 25px 25px;
-}
-
-#ugd-logo::before {
-    content: ' ';
-    display: block;
-    background-image: url("logo_vertical_negative.png");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 25rem;
-}
-
-#email-contato {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-}
+/* Classes */
 
 .contents {
-    padding: 0 25px;
+    position: relative;
+    padding: 0 1.5rem;
     margin: 0 auto;
     max-width: 80%;
+    height: fit-content;
 }
 
 @media (min-width: 960px) {
@@ -154,7 +116,7 @@ ul {
 .column-block {
     display: inline-block;
     margin: 0;
-    padding: 0 25px;
+    padding: 0 1.5rem;
 }
 
 .section-front {
@@ -165,12 +127,15 @@ ul {
 
 .section-odd {
     background-color: #1f2830;
-    height: 60%;
 }
 
 .section-even {
-    background-color: #1A1A1A;
-    height: 60%;
+    background-color: #1a1a1a;
+}
+
+.section-contents {
+    height: fit-content;
+    padding: 1.5rem 0;
 }
 
 .y-center {
@@ -196,17 +161,17 @@ ul {
 }
 
 .img-wiki {
-    background-image: url('https://usp.game.dev.br/media/fotos/2018-8-24_palestra-EM/IMG_1935.jpg');
+    background-image: url("https://usp.game.dev.br/media/fotos/2018-8-24_palestra-EM/IMG_1935.jpg");
     background-size: cover;
 }
 
 .img-discord {
-    background-image: url('https://usp.game.dev.br/media/fotos/2018-6-29_IV-lets-play/IMG_20180629_144514384.jpg');
+    background-image: url("https://usp.game.dev.br/media/fotos/2018-6-29_IV-lets-play/IMG_20180629_144514384.jpg");
     background-size: cover;
 }
 
 .img-overlay::before {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -215,10 +180,146 @@ ul {
     background-color: #1a1a1aa0;
 }
 
+.description {
+    height: fit-content;
+}
+
 .title-description {
     font-size: 1rem;
 }
 
+.force-display {
+    display: block !important;
+}
+
 .hide {
     display: none;
+}
+
+.fade {
+    opacity: 0 !important;
+}
+
+/* Unique elements */
+
+#wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 1.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#nav-header {
+    background-color: #1a1a1a;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 96px;
+    line-height: 96px;
+    z-index: 999;
+    display: block;
+    border-bottom: 2px solid #101010;
+    /* trick for fixing spaces between inline-blocks */
+    font-size: 0;
+}
+
+@media (min-width: 960px) {
+    #nav-header {
+        display: block;
+    }
+}
+
+#nav-header a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    display: block;
+    height: 100%;
+}
+
+#navmenu {
+    display: inline-block;
+    position: relative;
+}
+
+#navmenu.force-display {
+    display: block !important;
+}
+
+#navmenu-toggler {
+    display: none;
+}
+
+@media (max-width: 959px) {
+    #navmenu {
+        display: none;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 5rem;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    #navmenu li {
+        border-top: 1px solid #404040;
+        display: block;
+        text-align: left;
+    }
+
+    #navmenu li a:hover,
+    #navmenu li a:focus,
+    #navmenu li a:active {
+        background-color: #404040;
+    }
+
+    #navmenu-toggler {
+        display: block;
+        float: right;
+    }
+}
+
+#ugd-logo {
+    padding: 7rem 1.5rem 1.5rem;
+}
+
+#ugd-logo::before {
+    content: " ";
+    display: block;
+    background-image: url("logo_vertical_negative.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+}
+
+#email-contato {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+#goto-top-link {
+    position: fixed;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    bottom: 20px;
+    left: 20px;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    opacity: 0.75;
+    transition: opacity 400ms;
+}
+
+#goto-top-link a {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
 }

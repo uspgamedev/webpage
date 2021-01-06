@@ -1,151 +1,192 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>USPGameDev</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,700&family=Roboto+Slab:wght@700&display=swap"
-        rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="https://uspgamedev.org/media/logo_favicon.png" />
-</head>
+    <head>
+        <title>USPGAMEDEV</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+        <link href="font-awesome/css/all.min.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,700&family=Roboto+Slab:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="style.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="https://uspgamedev.org/media/logo_favicon.png" />
+    </head>
 
-<body>
-    <div id="wrapper">
-        <header id="nav-header">
-            <div class="inline-block"><a href="#">USPGameDev</a></div>
-            <div class="inline-block hide">
-                <a href="/">
-                    <div class="icon"></div>
-                </a>
-            </div>
-            <ul id="navmenu" class="inline-block">
-                <li class="inline-block">
-                    <a href="#">Projetos</a>
-                </li>
-                <li class="inline-block">
-                    <a href="#">Discord</a>
-                </li>
-                <li class="inline-block">
-                    <a href="#">Github</a>
-                </li>
-                <li class="inline-block">
-                    <a href="#">Gitlab</a>
-                </li>
-                <li class="inline-block">
-                    <a href="#">Wiki</a>
-                </li>
-            </ul>
-        </header>
-
-        <section class="section-front">
-            <div class="contents y-center text-center">
-                <div id="ugd-logo" alt="USP Game Dev"></div>
-                <div class="title-description">
-                    <p>
-                        Grupo de estudo e desenvolvimento de jogos<br />da Universidade de São Paulo
-                    </p>
+    <body>
+        <div id="wrapper">
+            <header id="nav-header">
+                <div class="inline-block">
+                    <a href="">USPGAMEDEV</a>
                 </div>
-            </div>
-        </section>
-
-        <section class="section-even">
-            <div class="contents y-center text-left">
-                <div class="description">
-                    <h4>Um grupo open-source para aspirantes desenvolvedores!</h4>
-                    <p>O USPGameDev é um grupo de estudos e desenvolvimento de jogos. Trocamos conhecimentos sobre
-                        games e tecnologias relacionadas, sempre com bom humor e inclusividade. Todos que querem
-                        fazer parte dessa troca são bem-vindos!</p>
+                
+                <div id="navmenu-toggler" class="inline-block hide">
+                    <a href="#">
+                        <div class="fa fa-bars"></div>
+                    </a>
                 </div>
-            </div>
-        </section>
 
-        <section class="section-odd">
-            <div class="contents y-center text-left">
-                <h2>
-                    <a href="https://uspgamedev.itch.io">itch.io</a>
-                </h2>
-                <div class="description">
-                    <h4>Conheça nossos projetos publicados!</h4>
-                    <p>Publicamos nossos projetos gratuitamente no itch.io. Sinta-se livre para jogá-los e nos contar
-                        qual gostou mais!</p>
+                <ul id="navmenu" class="inline-block">
+                    <li class="inline-block">
+                        <a class="goto-link" href="#ugd-projects">
+                            <i class="fa fa-gamepad"></i>
+                            Projetos
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a class="goto-link" href="#ugd-discord">
+                            <i class="fab fa-discord"></i>
+                            Discord
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a class="goto-link" href="#ugd-github">
+                            <i class="fab fa-github"></i>
+                            Github
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a class="goto-link" href="#ugd-gitlab">
+                            <i class="fab fa-gitlab"></i>
+                            Gitlab
+                        </a>
+                    </li>
+                    <li class="inline-block">
+                        <a href="https://usp.game.dev.br/wiki" target="_blank">
+                            <i class="fab fa-wikipedia-w"></i>
+                            Wiki
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="section-front">
+                <div class="contents y-center text-center">
+                    <div id="ugd-logo" alt="USP Game Dev"></div>
+                    <div class="title-description">
+                        <p>
+                            Grupo de estudo e desenvolvimento de jogos<br />da Universidade de São
+                            Paulo
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section-even img-discord img-overlay">
-            <div class="contents text-left y-center">
-                <h2>
-                    <a href="https://discord.gg/fkNtY4TKx2">Discord</a>
-                </h2>
-                <div class="description">
-                    <h4>Faça parte da nossa comunidade!</h4>
-                    <p>No Discord discutimos nossos projetos e tiramos dúvidas sobre o grupo. Ajudamos uns
-                        aos
-                        outros a
-                        fazer jogos e
-                        jogamos conversa fora também!</p>
+            <section class="section-even">
+                <div class="section-contents">
+                    <div class="contents text-left">
+                        <div class="description">
+                            <h2>Um grupo aberto</h2>
+                            <p>
+                                O grupo tem como princípio o conhecimento livre e aberto: nossos
+                                projetos são todos <b>open-source!</b>
+                            </p>
+                            <p>
+                                Trocamos conhecimentos sobre games e tecnologias relacionadas,
+                                sempre com bom humor e inclusividade. Todos que querem fazer parte
+                                dessa troca são bem-vindos!
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section-odd">
-            <div class="y-center text-center">
-                <div class="column-block">
+            <section id="ugd-projects" class="section-odd">
+                <div class="section-contents">
+                    <div class="contents text-left">
+                        <h2>
+                            <a href="https://uspgamedev.itch.io">itch.io</a>
+                        </h2>
+                        <div class="description">
+                            <h4>Conheça nossos projetos publicados!</h4>
+                            <p>
+                                Publicamos nossos projetos gratuitamente no
+                                <a href="https://itch.io">itch.io</a>. Sinta-se livre para jogá-los
+                                e nos contar qual gostou mais!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ugd-discord" class="section-even">
+                <div class="section-contents img-discord img-overlay">
+                    <div class="contents text-left">
+                        <h2>
+                            <a href="https://discord.gg/fkNtY4TKx2">Discord</a>
+                        </h2>
+                        <div class="description">
+                            <h4>Faça parte da nossa comunidade!</h4>
+                            <p>
+                                No Discord discutimos nossos projetos e tiramos dúvidas sobre o
+                                grupo. Ajudamos uns aos outros a fazer jogos e jogamos conversa fora
+                                também!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ugd-github" class="section-odd">
+                <div class="section-contents text-left">
                     <div class="contents">
                         <h2>
                             <a href="https://github.com/uspgamedev">Github</a>
                         </h2>
                         <div class="description">
-                            <p>[Insira descrição aqui]</p>
+                            <h4>Código aberto</h4>
+                            <p>
+                                Nosso código é inteiramente aberto e gratuito! Hosteamos o
+                                código fonte dos nossos projetos no nossos repositórios no
+                                Github.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="column-block">
+            </section>
+
+            <section id="ugd-gitlab" class="section-odd">
+                <div class="section-contents text-left">
                     <div class="contents">
                         <h2>
                             <a href="https://gitlab.com/uspgamedev">Gitlab</a>
                         </h2>
                         <div class="description">
-                            <p>[Insira descrição aqui]</p>
+                            <h4>Em mais de uma plataforma!</h4>
+                            <p>
+                                Além do Github, também utilizamos o Gitlab! Sempre que possível
+                                damos preferência a utilizar software livre!
+                            </p>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-        <section class="section-even img-wiki img-overlay">
-            <div class="contents y-center text-center">
-                <h2>
-                    <a href="https://usp.game.dev.br/wiki">Wiki</a>
-                </h2>
-                <div class="contents text-left">
-                    <div class="description">
-                        <p>Documentamos </p>
-                    </div>
+            <footer>
+                <div class="contents y-center text-center">
+                    <a href="https://github.com/uspgamedev/webpage">Layout & Code</a>: Copyright ©
+                    <span class="date">
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </span>
+                    <a href="https://usp.game.dev.br">USPGAMEDEV</a>
+                    via
+                    <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a>
+                    <br />
+                    <span id="email-contato">gro.vedemagpsu@otatnoc</span>
                 </div>
-            </div>
-        </section>
+            </footer>
 
-        <footer>
-            <div class="contents y-center text-center">
-                <a href="https://github.com/uspgamedev/webpage">Layout & Code</a>:
-                Copyright © <span class="date">
-                    <script>document.write(new Date().getFullYear());</script>
-                </span>
-                <a href="https://usp.game.dev.br">USPGameDev</a>
-                via
-                <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a>
-                <br />
-                <span id="email-contato">gro.vedemagpsu@otatnoc</span>
+            <div id="goto-top-link" class="text-center fade">
+                <a href="#nav-header" class="goto-link" alt="Back to top">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
             </div>
-        </footer>
-    </div>
-</body>
-
+        </div>
+        <script src="smooth.js" type="text/javascript"></script>
+    </body>
 </html>
