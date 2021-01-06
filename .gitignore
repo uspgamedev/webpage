@@ -1,1 +1,6 @@
+# MacOSX
 .DS_Store
+
+# NodeJS
+node_modules/
+out/
