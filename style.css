@@ -1,0 +1,224 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #1A1A1A;
+    color: #EFEFEF;
+}
+
+@media (min-width: 1281px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1921px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+a, a:active {
+    font-weight: 700;
+    color: #EFEFEF;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+    padding: 0.8em 0 0.25em;
+}
+
+p {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+body {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    display: block;
+    margin: 0 -25px;
+    padding: 25px 0;
+}
+
+footer {
+    position: relative;
+    display: block;
+    margin: 0 -25px;
+    height: 128px;
+    font-size: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#nav-header {
+    background-color: #1A1A1A;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 96px;
+    line-height: 96px;
+    z-index: 999;
+    display: none;
+    border-bottom: 2px solid #101010;
+    /* trick for fixing spaces between inline-blocks */
+    font-size: 0;
+}
+
+@media (min-width: 960px) {
+    #nav-header {
+        display: block;
+    }
+}
+
+#nav-header a {
+    font-size: 1.5rem;
+    padding: 0 25px;
+    display: block;
+    height: 100%;
+}
+
+#ugd-logo {
+    padding: 7rem 25px 25px;
+}
+
+#ugd-logo::before {
+    content: ' ';
+    display: block;
+    background-image: url("logo_vertical_negative.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 25rem;
+}
+
+#email-contato {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.contents {
+    padding: 0 25px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+@media (min-width: 960px) {
+    .contents {
+        max-width: 40%;
+    }
+}
+
+.column-block {
+    display: inline-block;
+    margin: 0;
+    padding: 0 25px;
+}
+
+.section-front {
+    height: 100%;
+    background-color: #1f2830;
+    vertical-align: middle;
+}
+
+.section-odd {
+    background-color: #1f2830;
+    height: 60%;
+}
+
+.section-even {
+    background-color: #1A1A1A;
+    height: 60%;
+}
+
+.y-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.img-wiki {
+    background-image: url('https://usp.game.dev.br/media/fotos/2018-8-24_palestra-EM/IMG_1935.jpg');
+    background-size: cover;
+}
+
+.img-discord {
+    background-image: url('https://usp.game.dev.br/media/fotos/2018-6-29_IV-lets-play/IMG_20180629_144514384.jpg');
+    background-size: cover;
+}
+
+.img-overlay::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a1a1aa0;
+}
+
+.title-description {
+    font-size: 1rem;
+}
+
+.hide {
+    display: none;
+}
