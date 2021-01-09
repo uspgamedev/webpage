@@ -292,7 +292,7 @@ ul {
 #ugd-logo::before {
     content: " ";
     display: block;
-    background-image: url("logo_vertical_negative.png");
+    background-image: url("../assets/logo_vertical_negative.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
