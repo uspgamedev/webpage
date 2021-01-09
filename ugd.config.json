@@ -1,4 +1,5 @@
 {
+    "rootDirectory": "./src/layouts",
     "title": "USPGAMEDEV",
     "domain": "https://usp.game.dev.br",
     "gitlab": "https://gitlab.com/uspgamedev",

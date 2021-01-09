@@ -13,7 +13,7 @@
         "lint": "npm-run-all lint-ts lint-ejs",
         "clean": "ts-node prebuild-config.ts",
         "compilebuild": "npm-run-all lint clean",
-        "build-html": "ejs ./src/layouts/index.ejs -f ./ugd.config.json -o ./out/index.html",
+        "build-html": "ejs ./src/layouts/index.ejs -w -f ./ugd.config.json -o ./out/index.html",
         "build-scripts": "webpack --config webpack.config.js",
         "build": "npm-run-all build-html build-scripts"
     },
