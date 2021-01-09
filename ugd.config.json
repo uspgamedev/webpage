@@ -1,0 +1,13 @@
+{
+    "title": "USPGAMEDEV",
+    "domain": "https://usp.game.dev.br",
+    "gitlab": "https://gitlab.com/uspgamedev",
+    "github": "https://github.com/uspgamedev",
+    "discord": "https://discord.gg/fkNtY4TKx2",
+    "wiki": "/wiki",
+    "websiteRepository": "https://github.com/uspgamedev/webpage",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://www.gnu.org/licenses/gpl-3.0.html",
+    "contactEmail": "contato@uspgamedev.org",
+    "favicon": "https://uspgamedev.org/media/logo_favicon.png"
+}

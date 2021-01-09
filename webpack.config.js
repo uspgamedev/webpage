@@ -64,24 +64,5 @@ module.exports = [
       path: path.resolve(__dirname, 'out'),
       filename: 'trash.js'
     },
-  },
-  {
-    mode: 'production',
-    module: {
-      rules: [
-        {
-          test: /\.ejs$/,
-          loader: 'ejs-loader',
-          options: {
-            esModule: false
-          }
-        }
-      ]
-    },
-    entry: path.join(__dirname, 'src/layouts/index.ejs'),
-    output: {
-      path: path.resolve(__dirname, 'out'),
-      filename: 'index.html'
-    }
   }
 ];
