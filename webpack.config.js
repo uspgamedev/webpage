@@ -44,7 +44,7 @@ module.exports = [
             options: {
               publicPath: path.resolve(__dirname, 'src/assets'),
               outputPath: path.resolve(__dirname, 'out'),
-              encoding: false,
+              encoding: 'base64',
               name: '[name].[ext]',
               esModule: false
             }
